@@ -59,9 +59,11 @@ python3 49933.py
 ```
  
 <img width="633" height="214" alt="running the python exploit script" src="https://github.com/user-attachments/assets/23828b25-98ac-414c-9a63-b18dc2e91fd3" />
+
 It prompts for the host URL, then hands you a shell:
  
 <img width="503" height="147" alt="pseudo-shell returned by the exploit" src="https://github.com/user-attachments/assets/7b87e13e-b8af-46a4-9d5f-f14cfb604ad3" />
+
 ```bash
 $ id
 $ ls /
