@@ -15,6 +15,7 @@ nmap -sC -sV -oN agentt.txt <TARGET_IP>
 ```
  
 <img width="670" height="172" alt="nmap scan results showing port 80 running PHP 8.1.0-dev" src="https://github.com/user-attachments/assets/aba21e6c-5876-4ff8-8d88-ed3830bbee37" />
+
 Port 80 is open running a PHP development server. The nmap service line literally reads `PHP cli server 5.5 or later (PHP 8.1.0-dev)`, with an HTTP title of *Admin Dashboard*. In a browser it's a plain, harmless-looking page with nothing obviously interesting on it:
  
 <img width="956" height="883" alt="the Admin Dashboard web page, looking innocent" src="https://github.com/user-attachments/assets/9763f4b9-64f7-4715-96e3-0c8e57159bd6" />
@@ -29,6 +30,7 @@ curl -I http://<TARGET_IP>
 ```
  
 <img width="507" height="152" alt="curl -I response showing X-Powered-By: PHP/8.1.0-dev" src="https://github.com/user-attachments/assets/c7bd5b26-e93e-475e-b2a5-5271f5d2f7f6" />
+
 Look at the `X-Powered-By` header:
  
 ```http
